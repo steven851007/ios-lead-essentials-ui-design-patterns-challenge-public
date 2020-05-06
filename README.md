@@ -1,5 +1,7 @@
 # The UI Design Patterns Challenge - iOSLeadEssentials.com
 
+![](https://github.com/essentialdevelopercom/ios-lead-essentials-ui-design-patterns-challenge/workflows/CI/badge.svg)
+
 It’s time to put your UI design patterns skills to the test! 
 
 You are called to implement a new UI feature: displaying localized error messages to the customers when the feed load fails.
