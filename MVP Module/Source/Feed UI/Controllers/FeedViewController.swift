@@ -11,7 +11,7 @@ protocol FeedViewControllerDelegate {
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, FeedLoadingView {
 	var delegate: FeedViewControllerDelegate?
 	
-	var tableModel = [FeedImageCellController]() {
+	private var tableModel = [FeedImageCellController]() {
 		didSet { tableView.reloadData() }
 	}
 
@@ -32,6 +32,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 			refreshControl?.endRefreshing()
 		}
 	}
+    
+    func display(_ cellControllers: [FeedImageCellController]) {
+        tableModel = cellControllers
+    }
 
 	public override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()

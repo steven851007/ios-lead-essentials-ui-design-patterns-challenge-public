@@ -15,10 +15,7 @@ final class FeedViewModel {
 	}
 	
 	var title: String {
-		return NSLocalizedString("FEED_VIEW_TITLE",
-			tableName: "Feed",
-			bundle: Bundle(for: FeedViewModel.self),
-			comment: "Title for the feed view")
+        Localized.Feed.title
 	}
 
 	var onLoadingStateChange: Observer<Bool>?

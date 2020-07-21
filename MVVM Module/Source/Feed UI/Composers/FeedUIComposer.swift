@@ -37,7 +37,6 @@ private extension FeedViewController {
 		let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
 		let feedController = storyboard.instantiateInitialViewController() as! FeedViewController
 		feedController.viewModel = viewModel
-		feedController.title = viewModel.title
 		return feedController
 	}
 }
