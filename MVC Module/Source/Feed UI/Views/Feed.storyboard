@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1hh-nG-9OR">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1hh-nG-9OR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,29 +19,32 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4a-GE-sBY">
-                                    <rect key="frame" x="8" y="8" width="398" height="18"/>
-                                    <viewLayoutGuide key="safeArea" id="RfT-kU-kzd"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEk-FM-eHT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                    <state key="normal" title="Error label">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hideMessage" destination="clu-9B-M8g" eventType="touchUpInside" id="pg2-dV-NHp"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="m4a-GE-sBY" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" constant="8" id="N9q-HI-XYp"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="m4a-GE-sBY" secondAttribute="trailing" id="QqE-a4-c5n"/>
-                                <constraint firstItem="m4a-GE-sBY" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leadingMargin" id="hcM-H0-YWr"/>
-                                <constraint firstAttribute="bottom" secondItem="m4a-GE-sBY" secondAttribute="bottom" constant="8" id="zmS-j0-eKt"/>
+                                <constraint firstAttribute="bottom" secondItem="YEk-FM-eHT" secondAttribute="bottom" id="Qep-tb-xKi"/>
+                                <constraint firstItem="YEk-FM-eHT" firstAttribute="leading" secondItem="clu-9B-M8g" secondAttribute="leading" id="TpL-BI-GUs"/>
+                                <constraint firstAttribute="trailing" secondItem="YEk-FM-eHT" secondAttribute="trailing" id="tEk-FB-CpF"/>
+                                <constraint firstItem="YEk-FM-eHT" firstAttribute="top" secondItem="clu-9B-M8g" secondAttribute="top" id="zd8-RU-kw0"/>
                             </constraints>
                             <connections>
-                                <outlet property="label" destination="m4a-GE-sBY" id="GLs-m1-rIC"/>
-                                <outletCollection property="gestureRecognizers" destination="FYg-l9-JlU" appends="YES" id="KuZ-lS-3Ho"/>
+                                <outlet property="button" destination="YEk-FM-eHT" id="IfM-Tk-p3o"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="pGT-Qn-vv2">
-                            <rect key="frame" x="0.0" y="642" width="414" height="16"/>
+                            <rect key="frame" x="0.0" y="670" width="414" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -179,11 +179,6 @@ Location</string>
                         <outlet property="view" destination="yrT-VT-7jR" id="hIa-c0-RtF"/>
                     </connections>
                 </customObject>
-                <tapGestureRecognizer id="FYg-l9-JlU" userLabel="Hide Error Tap Gesture">
-                    <connections>
-                        <action selector="hideMessage" destination="clu-9B-M8g" id="HvM-ul-xPJ"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="-11.383928571428571"/>
         </scene>
