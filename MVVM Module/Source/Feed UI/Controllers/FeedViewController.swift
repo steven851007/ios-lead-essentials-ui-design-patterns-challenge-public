@@ -12,7 +12,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 	var tableModel = [FeedImageCellController]() {
 		didSet { tableView.reloadData() }
 	}
-
+	
 	public override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -24,7 +24,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 	}
 	
 	func bind() {
-        title = viewModel?.title
+		title = viewModel?.title
 		viewModel?.onLoadingStateChange = { [weak self] isLoading in
 			if isLoading {
 				self?.refreshControl?.beginRefreshing()
@@ -33,7 +33,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
 			}
 		}
 	}
-
+	
 	public override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
 		

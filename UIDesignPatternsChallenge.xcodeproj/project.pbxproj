@@ -519,6 +519,7 @@
 				08B61539232268C400908DB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		08F3B5962322512F00510CE7 /* Products */ = {
 			isa = PBXGroup;
