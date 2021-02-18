@@ -53,6 +53,7 @@
 		08D6263324C9D5FC00EF6D46 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6263124C9D5FC00EF6D46 /* XCTestCase+Snapshot.swift */; };
 		08D6263524C9D61200EF6D46 /* FeedUISnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6263424C9D61200EF6D46 /* FeedUISnapshotTests.swift */; };
 		08D6263724C9D76C00EF6D46 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D6263624C9D76C00EF6D46 /* Localized.swift */; };
+		08DAB94025DE8DF3000763C7 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08619D7925DE865D00C323FB /* LocalizationTests.swift */; };
 		08F3B5BD2322526C00510CE7 /* MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F3B5B42322526C00510CE7 /* MVC.framework */; };
 		08F3B5E1232252F300510CE7 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3B5CF232252F300510CE7 /* FeedUIComposer.swift */; };
 		08F3B5E2232252F300510CE7 /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3B5D1232252F300510CE7 /* FeedRefreshViewController.swift */; };
@@ -241,6 +242,7 @@
 		082072E12322D13000759471 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 		082072E42322D1B700759471 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 		082072E52322D1B700759471 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		08619D7925DE865D00C323FB /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		08B614FF23225CE000908DB2 /* UI Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B6150A23225CE200908DB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B6150D23225CE200908DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 			children = (
 				08B6152923225E4700908DB2 /* AlwaysFailingLoaderTests.swift */,
 				08B6152823225E4700908DB2 /* AppDelegateTests.swift */,
+				08619D7925DE865D00C323FB /* LocalizationTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -1351,6 +1354,7 @@
 			files = (
 				08B6152B23225E4700908DB2 /* AlwaysFailingLoaderTests.swift in Sources */,
 				08B6152A23225E4700908DB2 /* AppDelegateTests.swift in Sources */,
+				08DAB94025DE8DF3000763C7 /* LocalizationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
