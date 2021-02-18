@@ -20,16 +20,18 @@ You can study and use the MVC solution as a guide to help you implement the same
 1) Display an error message to the customer when the app fails to load the feed.
 
 2) The error message must be localized in **at least** 4 languages. 
+
 	- The challenge project comes with three supported languages: English, Portuguese, and Greek. 
-	- The MVC solution contains the error message translated in the given supported languages. You can reuse those messages in your MVVM and MVP solutions, but you need to **add at least one extra language** of your choice (tip: use Google Translate if needed).
+
+	- The MVC solution contains the error message translated in the 3 given supported languages. You should reuse those messages in your MVVM and MVP solutions. 
+
+	- You need to **add one extra language** of your choice to all 4 modules (MVC, MVVM, MVP, and the main `Feed iOS App` module)
+
+		- Tip: use Google Translate if needed
+
+	- When adding a new localization to the project, make sure to select all resource files for all 4 modules.
 
 3) The customer should be able to tap to dismiss the error message.
-
-4) The layout should match the MVC guide and support Dark Mode.
-
-	- The challenge project comes with automated snapshot tests to validate the layout is pixel-perfect in Light and Dark Mode.
-
-	- Uncomment and run one test at a time. All snapshot tests must pass before you submit the pull request.
 
 5) Write tests to validate your implementation, including dismiss on tap (aim to write the test first!).
 
@@ -38,11 +40,14 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 1) Fork the latest version of this repository. Here's <a href="https://guides.github.com/activities/forking" target="_blank">how forking works</a>.
 
-2) Open the `UIDesignPatternsChallenge.xcodeproj` project on Xcode 12.3 (you can use other Xcode versions by switching to the appropriate branch, e.g., `xcode11`/`xcode12`).
+2) Open the `UIDesignPatternsChallenge.xcodeproj` project on Xcode 12.4 (you can use other Xcode versions by switching to the appropriate branch, e.g., `xcode11`, `xcode12`, `xcode12_2`, `xcode12_3`).
 
-	- ⚠️ Important: ***On Xcode 12.3, run the snapshot tests using the 'iPhone 12 - iOS 14.3' simulator*** (the same simulator used to take the snapshots). On older Xcode branches, run the tests with the 'iPhone 11 - iOS 13.x or 14.x' simulator.
+	- Do not change the indentation in the project.
+
+	- Do not rename the existing classes and files.
 
 3) The project is separated into modules:
+
 	- The `Feed Feature Module` is the shared module containing the `FeedItem` data model and abstract interfaces. ***You won’t need to change anything in this module.***
 	
 	- The `Feed iOS App` is the Main iOS Application module for composing the MV\* solutions in a `UITabBarController` and running the iOS application. ***You won’t need to change anything in this module.***
@@ -71,13 +76,38 @@ You can study and use the MVC solution as a guide to help you implement the same
 	- Navigate to the MV\* tab on the simulator/device.
 	- *The feed reload will always fail after a given timeout, so you can test your solution.* If you’re interested in studying how the feed reload always fails, have a look at the `AlwaysFailingLoader` (and its tests!) in the `Feed iOS App` module.
 
-9) The MVVM and MVP modules contain commented-out snapshot tests at `MV\* Module/Tests/Feed UI/FeedUISnapshotTests.swift`.
+9) The layout should match the provided MVC solution and support Dark Mode.
+
+10) The MVVM and MVP modules contain commented-out snapshot tests at `MV\* Module/Tests/Feed UI/FeedUISnapshotTests.swift`.
+	
 	- Uncomment and run one snapshot test at a time to validate the layout is pixel-perfect in Light and Dark Mode. 
+
+	- ⚠️ Important: ***Different simulators may generate slightly different snapshots (even if they look the same!).*** So you must run the snapshot tests using the appropriate simulator based on the branch you chose:
+
+		- `xcode11` -> iPhone 11 - iOS 13.x
+		- `xcode12` -> iPhone 12 - iOS 14.0 or iOS 14.1
+		- `xcode12_2` -> iPhone 12 - iOS 14.2
+		- `xcode12_3` -> iPhone 12 - iOS 14.3
+		- `xcode12_4` -> iPhone 12 - iOS 14.4
+
 	- All snapshot tests must pass before you submit the pull request.
 
-10) When all tests are passing and you're done implementing your solution, create a Pull Request from your branch to the main challenge repo **with the title: "Your Name - UI Design Patterns Challenge**.
+11) Errors should be handled accordingly.
+	- There shouldn't be *any* force-unwrap `!` or `fatalError` in production code.
 
-**11) Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.**
+	- There shouldn't be empty `catch` blocks.
+
+	- There shouldn't be any `print` statements, such as `print(error)`.
+
+12) When all tests are passing and you're done implementing your solution:
+
+	- Create a Pull Request from your branch to the main challenge repo's matching branch.
+
+		- For example, if you implemented the challenge using the `xcode12_4` branch, your PR should be from your fork's `xcode12_4` branch into the main repo's `xcode12_4` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
+
+	- The title of the Pull Request should be: **Your Name - UI Design Patterns Challenge**.
+
+13) Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
 
 
 ## Guidelines
