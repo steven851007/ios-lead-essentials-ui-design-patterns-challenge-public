@@ -92,14 +92,7 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 	- All snapshot tests must pass before you submit the pull request.
 
-11) Errors should be handled accordingly.
-	- There shouldn't be *any* force-unwrap `!` or `fatalError` in production code.
-
-	- There shouldn't be empty `catch` blocks.
-
-	- There shouldn't be any `print` statements, such as `print(error)`.
-
-12) When all tests are passing and you're done implementing your solution:
+11) When all tests are passing and you're done implementing your solution:
 
 	- Create a Pull Request from your branch to the main challenge repo's matching branch.
 
@@ -107,7 +100,7 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 	- The title of the Pull Request should be: **Your Name - UI Design Patterns Challenge**.
 
-13) Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
+12) Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
 
 
 ## Guidelines
