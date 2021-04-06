@@ -7,7 +7,6 @@ import FeedFeature
 import FeediOSApp
 
 final class AlwaysFailingLoaderTests: XCTestCase {
-	
 	func test_loadFeed_alwaysFails() {
 		let sut = AlwaysFailingLoader(delay: 0)
 		let exp = expectation(description: "Wait for load completion")
@@ -40,5 +39,4 @@ final class AlwaysFailingLoaderTests: XCTestCase {
 		
 		wait(for: [exp], timeout: 1.0)
 	}
-	
 }

@@ -6,7 +6,6 @@ import XCTest
 import MVC
 
 final class FeedLocalizationTests: XCTestCase {
-	
 	func test_localizedStrings_haveKeysAndValuesForAllSupportedLocalizations() {
 		let table = "Feed"
 		let presentationBundle = Bundle(for: FeedViewController.self)

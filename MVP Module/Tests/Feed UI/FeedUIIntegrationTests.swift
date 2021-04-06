@@ -8,7 +8,6 @@ import MVP
 import FeedFeature
 
 final class FeedUIIntegrationTests: XCTestCase {
-	
 	func test_feedView_hasTitle() {
 		let (sut, _) = makeSUT()
 		

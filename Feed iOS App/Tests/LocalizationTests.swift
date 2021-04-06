@@ -9,7 +9,6 @@ import MVP
 import FeediOSApp
 
 final class LocalizationTests: XCTestCase {
-	
 	func test_allModules_haveLocalizedResourcesForAllSupportedLocalizations() {
 		let moduleLocalizations: [(module: String, localizations: Set<String>)] = [
 			("FeediOSApp", localizations(for: FeediOSApp.AppDelegate.self)),

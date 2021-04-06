@@ -9,7 +9,6 @@ import MVC
 import FeediOSApp
 
 final class AppDelegateTests: XCTestCase {
-	
 	func test_canFinishLaunching() {
 		let sut = makeSUT()
 		
@@ -82,7 +81,6 @@ final class AppDelegateTests: XCTestCase {
 	func makeSUT() -> AppDelegate {
 		return AppDelegate()
 	}
-	
 }
 
 private extension AppDelegate {

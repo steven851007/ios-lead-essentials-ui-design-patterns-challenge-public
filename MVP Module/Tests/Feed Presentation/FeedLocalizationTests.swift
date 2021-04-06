@@ -6,7 +6,6 @@ import XCTest
 import MVP
 
 final class FeedLocalizationTests: XCTestCase {
-	
 	func test_localizedStrings_haveKeysAndValuesForAllSupportedLocalizations() {
 		let table = "Feed"
 		let presentationBundle = Bundle(for: FeedUIComposer.self)

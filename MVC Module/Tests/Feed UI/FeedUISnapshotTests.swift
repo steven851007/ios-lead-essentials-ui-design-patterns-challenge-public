@@ -7,7 +7,6 @@ import FeedFeature
 @testable import MVC
 
 class FeedUISnapshotTests: XCTestCase {
-	
 	func test_emptyFeed() {
 		let sut = makeSUT()
 		

@@ -7,9 +7,7 @@ import MVVM
 import FeedFeature
 
 extension FeedUIIntegrationTests {
-	
 	class LoaderSpy: FeedLoader, FeedImageDataLoader {
-		
 		// MARK: - FeedLoader
 		
 		private var feedRequests = [(FeedLoader.Result) -> Void]()
@@ -62,5 +60,4 @@ extension FeedUIIntegrationTests {
 			imageRequests[index].completion(.failure(error))
 		}
 	}
-	
 }

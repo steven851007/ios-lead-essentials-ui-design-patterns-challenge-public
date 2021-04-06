@@ -7,7 +7,6 @@ import FeedFeature
 @testable import MVVM
 
 class FeedUISnapshotTests: XCTestCase {
-	
 	//  ***********************
 	//
 	//  Uncomment and run one test at a time

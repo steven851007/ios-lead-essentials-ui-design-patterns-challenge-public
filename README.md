@@ -46,6 +46,8 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 	- Do not rename the existing classes and files.
 
+	- Important: Every time you build the project, it'll automatically reformat the modified files with SwiftFormat to maintain the code consistent.
+
 3) The project is separated into modules:
 
 	- The `Feed Feature Module` is the shared module containing the `FeedItem` data model and abstract interfaces. ***You won’t need to change anything in this module.***

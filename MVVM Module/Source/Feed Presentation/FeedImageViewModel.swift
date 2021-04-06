@@ -23,7 +23,7 @@ final class FeedImageViewModel<Image> {
 		return model.description
 	}
 	
-	var location: String?  {
+	var location: String? {
 		return model.location
 	}
 	
