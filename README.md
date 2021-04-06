@@ -100,7 +100,13 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 	- The title of the Pull Request should be: **Your Name - UI Design Patterns Challenge**.
 
-12) Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
+12) Review your code in the Pull Request (PR) and make sure it follows **all** the instructions above. 
+
+	- If it doesn't, make the appropriate changes, push, and review your code in the PR again.
+
+13) After you review your code and it follows **all** the instructions above:
+	
+	- Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
 
 
 ## Guidelines
