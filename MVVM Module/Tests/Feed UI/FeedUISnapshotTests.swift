@@ -13,7 +13,7 @@ class FeedUISnapshotTests: XCTestCase {
 	//  to validate the layout (including Dark Mode support).
 	//
 	//  ***********************
-	
+
 //	func test_emptyFeed() {
 //		let sut = makeSUT()
 //
@@ -31,9 +31,9 @@ class FeedUISnapshotTests: XCTestCase {
 //		assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "FEED_WITH_ERROR_light")
 //		assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "FEED_WITH_ERROR_dark")
 //	}
-	
+
 	// MARK: - Helpers
-	
+
 	private func makeSUT() -> FeedViewController {
 		let loader = FeedLoaderStub(.success([]))
 		let bundle = Bundle(for: FeedViewController.self)
@@ -45,7 +45,7 @@ class FeedUISnapshotTests: XCTestCase {
 		controller.tableView.showsHorizontalScrollIndicator = false
 		return controller
 	}
-	
+
 	private func emptyFeed() -> [FeedImageCellController] {
 		[]
 	}
@@ -53,11 +53,11 @@ class FeedUISnapshotTests: XCTestCase {
 
 private class FeedLoaderStub: FeedLoader {
 	private let result: FeedLoader.Result
-	
+
 	init(_ result: FeedLoader.Result) {
 		self.result = result
 	}
-	
+
 	func load(completion: @escaping (FeedLoader.Result) -> Void) {
 		completion(result)
 	}
@@ -67,7 +67,7 @@ private extension FeedViewController {
 	func display(errorMessage: String) {
 		fatalError("Must be implemented - follow the MVC solution as a guide")
 	}
-	
+
 	func display(_ feed: [FeedImageCellController]) {
 		tableModel = feed
 	}
