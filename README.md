@@ -96,19 +96,18 @@ You can study and use the MVC solution as a guide to help you implement the same
 
 11) When all tests are passing and you're done implementing your solution:
 
-	- Create a Pull Request from your branch to the main challenge repo's matching branch.
+	- Review your code and make sure it follows **all** the instructions above.
+
+		- If it doesn't, make the appropriate changes, push, and review your code again.
+
+	- If it does, create a Pull Request from your branch to the main challenge repo's matching branch.
 
 		- For example, if you implemented the challenge using the `xcode12_5` branch, your PR should be from your fork's `xcode12_5` branch into the main repo's `xcode12_5` branch (DO NOT MIX Xcode versions or you'll have merge conflicts!).
 
-	- The title of the Pull Request should be: **Your Name - UI Design Patterns Challenge**.
+	- The title of the Pull Request should be: **Your Name - UI Design Patterns Challenge**
 
-12) Review your code in the Pull Request (PR) and make sure it follows **all** the instructions above. 
 
-	- If it doesn't, make the appropriate changes, push, and review your code in the PR again.
-
-13) After you review your code and it follows **all** the instructions above:
-	
-	- Post a comment in the challenge page in the academy with the link to your PR, so we can review your solution and provide feedback.
+12) We'll review your Pull Request and approve it or request any changes required with detailed feedback.
 
 
 ## Guidelines
