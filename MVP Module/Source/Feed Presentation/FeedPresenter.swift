@@ -14,7 +14,7 @@ protocol FeedView {
 }
 
 protocol FeedLoadingErrorView {
-	func display(_ error: FeedLoadingErrorViewModel)
+	func display(_ viewModel: FeedLoadingErrorViewModel)
 }
 
 final class FeedPresenter {

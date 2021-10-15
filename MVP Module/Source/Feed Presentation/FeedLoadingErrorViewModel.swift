@@ -10,4 +10,7 @@ import FeedFeature
 
 struct FeedLoadingErrorViewModel {
 	let error: Error
+	var message: String {
+		Localized.Feed.loadError
+	}
 }
