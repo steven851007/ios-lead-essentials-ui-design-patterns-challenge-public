@@ -1,5 +1,5 @@
 //
-//  FeedLoadingErrorViewModel.swift
+//  FeedErrorViewModel.swift
 //  MVP
 //
 //  Created by Istvan Balogh on 15.10.21.
@@ -8,6 +8,6 @@
 
 import FeedFeature
 
-struct FeedLoadingErrorViewModel {
+struct FeedErrorViewModel {
 	var message: String?
 }
